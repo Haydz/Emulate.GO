@@ -76,11 +76,11 @@ Example of JSON output:
 # Client Mode Specific Options:  
 
 ## -clientconnect
+`clientconnect 127.0.0.1:4444`
+
+The IP and port that the client should connect to
 
 # Parent Specific Options:
-For normal parent mode:
-`-parent`
-
 
 
 ## -parentconnect
@@ -90,8 +90,6 @@ The IP and port that the parent should connect to the Admin interface on.
 ## -parentlisten
 `-parentlisten 127.0.0.1:5555`
 The IP and port that the parent should listen on (for the client to connect).
-
-
 
 
 

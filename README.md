@@ -11,8 +11,11 @@ Run with Go: `go run emulation.go`
 
 # TL;DR Usage Example
 
-Using on one machine:
+**Windows**
 ![](images/image5.png)
+
+**Linux**
+![](images/image6.png)
 
 
 

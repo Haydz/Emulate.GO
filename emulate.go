@@ -361,7 +361,7 @@ L+YfXkBaAnQvra+E6qXOX6u7F5JORGDaA6ENTbo7rBHFzlhU23j44uk=
 		}
 	}
 	// }
-	fmt.Println("PARENT CONNECTED")
+	fmt.Println("Connection made")
 
 	return conn
 }
@@ -425,7 +425,7 @@ func adminlistenMode(c net.Conn){
 			log.Println(err.Error())
 			fmt.Println("!!!! LOST CONNECTION RESTARTING !!!! ")
 			// TODO FIX THIS RESTARTING LOOP
-
+			adminlistenMode(connectTLSadmin())
 			break // break out of loop and restart a connection and listen
 		}
 		fmt.Println("===Results===")

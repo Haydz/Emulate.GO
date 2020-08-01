@@ -18,7 +18,7 @@ Run with Go: `go run emulation.go`
 ![](images/image6.png)
 
 
-
+# Standard Usage
 ## Admin Mode
 `go run emulation.go -mode admin -listen 127.0.0.1:9999`
 
@@ -32,13 +32,37 @@ The Admin mode is used to emulate the C2 infrastructure (attacker on an external
 
 The client mode will receive commands or list of commands from the Admin (Or parent) interface, then execute on the operating system and send the results back.
 
+### Client List mode
+`clientlist`
+
 ## Parent Proxy Mode
 `go run .\emulation.go -mode parent -parentconnect 127.0.0.1:9999 parentlisten 127.0.0.1:10000`
 
 The Parent Proxy mode is to act as a way to forward commands to a third machine. The parent will act as a proxy for commands and command execution results between the Admin interface and client interface.
 
 
+# List Mode
+List mode allows a list of commands to be supplied and executed in sequence
+
+## Admin List Mode
+` go run -mode admin -listen 127.0.0.1:9999 -commands <file>.txt `
+
+## Client List Mode
+`go run emulate.go -mode clientlist -clientconnect 127.0.0.1:5555`
+
+
+## Parent List Mode
+For parent mode with a list of commands
+`go run emulate.go -mode parentlist -parentconnect 127.0.0.1:4444 -parentlisten 127.0.0.1:5555`
+
+
+
 # Admin specific Options:
+
+## -listen
+`-listen 127.0.0.1:4444`
+Choose which IP and port to listen on
+
 ## -logging
 `-logging <filename>`
 This will add JSON logging to a file from within the Admin interface.
@@ -47,6 +71,28 @@ This is to allow documentation of commands executed with timestamps.
 
 Example of JSON output:  
 ![](images/image1.png)
+
+
+# Client Mode Specific Options:  
+
+## -clientconnect
+
+# Parent Specific Options:
+For normal parent mode:
+`-parent`
+
+
+
+## -parentconnect
+`-parentconnect 127.0.0.1:4444`
+The IP and port that the parent should connect to the Admin interface on.
+
+## -parentlisten
+`-parentlisten 127.0.0.1:5555`
+The IP and port that the parent should listen on (for the client to connect).
+
+
+
 
 
 # Generic Options

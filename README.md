@@ -76,9 +76,9 @@ Example of JSON output:
 # Client Mode Specific Options:  
 
 ## -clientconnect
-`clientconnect 127.0.0.1:4444`
+`-clientconnect 127.0.0.1:4444`
 
-The IP and port that the client should connect to
+The IP and port that the client should connect to.
 
 # Parent Specific Options:
 
@@ -97,7 +97,6 @@ The IP and port that the parent should listen on (for the client to connect).
 
 ## -tls
 This will add encryption to all modes. The network traffic sent and received will be encrypted with a self signed certificate supplied within the tool itself.
-
 
 
 ## -skip

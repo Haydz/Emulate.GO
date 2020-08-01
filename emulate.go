@@ -424,6 +424,7 @@ func adminlistenMode(c net.Conn){
 		if err := decoder.Decode(&outputTest); err != nil {
 			log.Println(err.Error())
 			fmt.Println("!!!! LOST CONNECTION RESTARTING !!!! ")
+			// TODO FIX THIS RESTARTING LOOP
 
 			break // break out of loop and restart a connection and listen
 		}

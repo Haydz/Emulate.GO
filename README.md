@@ -9,6 +9,13 @@ Use the ELF binary for Linux
 
 Run with Go: `go run emulation.go`
 
+# TL;DR Usage Example
+
+Using on one machine:
+![](images/image5.png)
+
+
+
 ## Admin Mode
 `go run emulation.go -mode admin -listen 127.0.0.1:9999`
 
@@ -50,6 +57,7 @@ This will add encryption to all modes. The network traffic sent and received wil
 This will skip the ENTER requirements when launching each mode. This was added to prevent script kiddies from running the tool.
 
 Example of program pause:
+
 ![](images/image4.png)
 
 ## -silence

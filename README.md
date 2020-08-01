@@ -45,9 +45,12 @@ Example of JSON output:
 This will add encryption to all modes. The network traffic sent and received will be encrypted with a self signed certificate supplied within the tool itself.
 
 
+
 ## -skip
 This will skip the ENTER requirements when launching each mode. This was added to prevent script kiddies from running the tool.
 
+Example of program pause:
+![](images/image4.png)
 
 ## -silence
 Only available in parent and client modes.
@@ -59,6 +62,12 @@ This will cause the parent and client modes to not print anything to the screen.
 
 # Visual Representation of Modes
 
+## Standard Admin and Client
 
+![](images/image2.png)
+
+## Using Parent Proxy Mode
+
+![](images/image3.png)
 
 

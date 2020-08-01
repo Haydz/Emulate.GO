@@ -4,7 +4,9 @@ A tool to abstract away the complexity of executing command line indicators in a
 
 # How to Use - Basics
 Use the executable for Windows
+
 Use the ELF binary for Linux
+
 Run with Go: `go run emulation.go`
 
 ## Admin Mode
@@ -28,7 +30,13 @@ The Parent Proxy mode is to act as a way to forward commands to a third machine.
 
 # Admin specific Options:
 ## -logging
-This will add JSON logging to a file from within the Admin interface
+`-logging <filename>`
+This will add JSON logging to a file from within the Admin interface.
+
+This is to allow documentation of commands executed with timestamps.
+
+Example of JSON output:  
+![](images/image1.png)
 
 
 # Generic Options
@@ -37,9 +45,19 @@ This will add JSON logging to a file from within the Admin interface
 This will add encryption to all modes. The network traffic sent and received will be encrypted with a self signed certificate supplied within the tool itself.
 
 
-
 ## -skip
 This will skip the ENTER requirements when launching each mode. This was added to prevent script kiddies from running the tool.
+
+
+## -silence
+Only available in parent and client modes.
+`-silence`
+
+This will cause the parent and client modes to not print anything to the screen.
+
+
+
+# Visual Representation of Modes
 
 
 

@@ -9,6 +9,7 @@ Use the ELF binary for Linux
 
 Run with Go: `go run emulation.go`
 
+
 # TL;DR Usage Example
 
 **Windows**
@@ -17,6 +18,9 @@ Run with Go: `go run emulation.go`
 **Linux**
 ![](images/image6.png)
 
+
+# Video Demonstrations 
+Videos might be easier than reading. Please find the link to the demonstrations on YouTube [here](https://www.youtube.com/watch?v=7OV9_Xw5urU&list=PLgdsY7EjXNsaO36rHr8D8cJdP1nlbpVip)
 
 # Standard Usage
 ## Admin Mode
@@ -76,19 +80,25 @@ Example of JSON output:
 # Client Mode Specific Options:  
 
 ## -clientconnect
+The IP and port that the client should connect to.
+
 `-clientconnect 127.0.0.1:4444`
 
-The IP and port that the client should connect to.
+
 
 # Parent Specific Options:
 
 ## -parentconnect
-`-parentconnect 127.0.0.1:4444`
 The IP and port that the parent should connect to the Admin interface on.
 
+`-parentconnect 127.0.0.1:4444`
+
+
 ## -parentlisten
-`-parentlisten 127.0.0.1:5555`
 The IP and port that the parent should listen on (for the client to connect).
+
+`-parentlisten 127.0.0.1:5555`
+
 
 
 

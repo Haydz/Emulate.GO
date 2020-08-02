@@ -36,13 +36,13 @@ The Admin mode is used to emulate the C2 infrastructure (attacker on an external
 
 The client mode will receive commands or list of commands from the Admin (Or parent) interface, then execute on the operating system and send the results back.
 
-### Client List mode
-`clientlist`
 
 ## Parent Proxy Mode
-`go run .\emulation.go -mode parent -parentconnect 127.0.0.1:9999 parentlisten 127.0.0.1:10000`
-
 The Parent Proxy mode acts as a way to forward commands to a third machine. The parent will act as a proxy for commands and command execution results between the Admin interface and client interface.
+
+`go run .\emulation.go -mode parent -parentconnect 127.0.0.1:9999 -parentlisten 127.0.0.1:10000`
+
+
 
 
 # List Mode
@@ -50,7 +50,7 @@ List mode allows a list of commands to be supplied and executed in sequence.
 It requires a file of commands on each new line in a text file. This is used in AdminList Mode.
 
 ## Admin List Mode
-` go run -mode admin -listen 127.0.0.1:9999 -commands <file>.txt `
+` go run -mode admin -listen 127.0.0.1:9999 -commands commandfile.txt `
 
 ## Client List Mode
 `go run emulate.go -mode clientlist -clientconnect 127.0.0.1:5555`

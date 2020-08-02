@@ -4,10 +4,12 @@ A tool to abstract away the complexity of executing command line indicators in a
 
 # How to Use - Basics
 Use the executable for Windows
+`emulate.exe`
 
 Use the ELF binary for Linux
+`emulate`
 
-Run with Go: `go run emulation.go`
+Run with Go: `go run emulate.go`
 
 
 # TL;DR Usage Example

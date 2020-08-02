@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="865733f0-5085-47e3-9cb6-e86f04df0541" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testcommand.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emulate" beforeDir="false" afterPath="$PROJECT_DIR$/emulate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emulate.exe" beforeDir="false" afterPath="$PROJECT_DIR$/emulate.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emulate.go" beforeDir="false" afterPath="$PROJECT_DIR$/emulate.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +18,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fTTOsW9Q1eZckgmpt9PFL1IDqe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
@@ -29,5 +36,18 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1028" y="524" key="#Notifications" timestamp="1596244747577">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1028" y="524" key="#Notifications/0.0.2560.1400/2560.-193.1080.1880@0.0.2560.1400" timestamp="1596244747577" />
+    <state x="1033" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596245529852">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1033" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/2560.-193.1080.1880@0.0.2560.1400" timestamp="1596245529852" />
   </component>
 </project>

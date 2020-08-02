@@ -28,7 +28,6 @@ CHECK IF CLIENT AND PARENT WORK ON LINUX
 
 Add TLS within itself
 
-error handling to identify if connection is dropped
 
 might be worth making a function for sending and receiving?
 
@@ -463,7 +462,7 @@ func connectTLS() net.Conn {
 		}
 		CA_Pool.AppendCertsFromPEM(severCert)
 
-		config := tls.Config{RootCAs: CA_Pool}
+		config := tls.Config{RootCAs: CA_Pool, InsecureSkipVerify: true}
 
 		if *mode == "client" {
 
@@ -679,6 +678,8 @@ func parentMode(c net.Conn) {
 	PORT := *parentListen
 
 	if *tlsOn == true {
+
+		//TODO FIX LOADING CERT
 		cert, err := tls.LoadX509KeyPair("C:\\Users\\haydn\\Desktop\\hackers\\blackhatgo\\src\\RTV\\openssl\\mydomain.com.crt", "C:\\Users\\haydn\\Desktop\\hackers\\blackhatgo\\src\\RTV\\openssl\\mydomain.com.key")
 		checkError(err)
 
@@ -786,7 +787,8 @@ func main() {
 		fmt.Println(quietCheck("TLS: On"))
 	}
 	if *loggingName != "" {
-		fmt.Println(quietCheck(fmt.Sprintf("Logging: ON - Filename: ", *loggingName + ".json")))
+		//fmt.Println(quietCheck(fmt.Sprintf("Logging: ON - Filename: ", *loggingName + ".json")))
+		fmt.Println(quietCheck("Logging: ON - Filename: " + *loggingName + ".json"))
 	} else {
 		fmt.Println(quietCheck("Logging: OFF"))
 	}
